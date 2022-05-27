@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./image/lock.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="max-width">
+        <div class="topo">
+          <h2>
+            Breno &
+            <hr size="6" noshade width="10%" align="right" />
+            Carol
+          </h2>
+          <div class="icone">Icone</div>
+          <div class="data">29.04.2022</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <a href="index.html"><li>Inicio</li></a>
+          <a href="os-noivos.html"><li>Os noivos</li></a>
+          <a href="recepcao.html"><li>Recepção</li></a>
+          <a href="form.html"><li>Confirme sua presença</li></a>
+          <a href="presentes.html"><li>Lista de presentes</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <br /><br />
+
+    <main>
+      <section>
+        <div>
+          <div class="title">LISTA DE PRESENTES</div>
+          <div class="text-1">
+            <p>
+              Já temos um lar cheio de amor, carinho e bens materiais. Optamos
+              por não fazer lista de presentes. Caso queira nos presentear,
+              sugerimos uma contribuição através de transferência. <br /><br />
+              Pix: 27988547402 (Ana Carolina Matos Costa - Nubank) <br />
+              Pix: 164.857.377-07 (Breno de Jesus Vital - Nubank) <br />
+              Picpay: @brenovital
+            </p>
+          </div>
+          <br /><br />
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <div>
+            <h3>
+              <ion-icon name="finger-print-outline"></ion-icon>Breno Vital
+            </h3>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- scripts -->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("April 29, 2022 19:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("dday").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("dday").innerHTML = "SITE NA TEIA";
+        }
+      }, 1000);
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

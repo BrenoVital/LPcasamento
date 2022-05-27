@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1120px) {
+  .galeria img {
+    width: 970px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .galeria img {
+    width: 670px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .galeria img {
+    width: 570px;
+    height: 300px;
+  }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  nav li {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .inicio {
+    font-size: 20px;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  .termos p {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and ( max-width: 575px){
+  form {
+    width: 450px;
+  }  
+}
+
+@media only screen and (max-width: 480px) {
+  nav li {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .inicio {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .galeria img {
+    width: 360px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 340px;
+  }
+
+  .termos p {
+    font-size: 15px;
+  }
+
+  .termos #termos {
+    margin: auto;
+  }
+}
